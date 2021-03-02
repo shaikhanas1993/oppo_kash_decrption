@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4d6e6e45-07a5-465d-a25d-98842aa8066b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>oppo_kash_scheduler_scripts.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>oppo-kash-scheduler-scripts</Name>
+    <RootNamespace>oppo-kash-scheduler-scripts</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="oppo_kash_common_user_decryption.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oppo_kash_early_salary_decryption.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oppo_kash_early_salary_sdk_decryption.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oppo_kash_insurance_decryption.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oppo_kash_lending_kart_decryption.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oppo_kash_routing_partner_decryption.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oppo_kash_scheduler_scripts.py" />
+    <Compile Include="oppo_kash_tbl_external_api_logs.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
